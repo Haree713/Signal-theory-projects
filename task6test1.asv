@@ -1,0 +1,14 @@
+% Define the range of normalized frequency v
+v = linspace(0, 1, 1000); % Adjust the range as needed
+
+% Calculate the power spectrum R_x1
+R_x1 = 1 ./ (1 + 0.25^2 - 0.5 * cos(2 * pi * v));
+
+
+% Plot the power spectrum
+figure;
+plot(v, R_x1);
+title('Power Spectrum R_x1');
+xlabel('Normalized Frequency');
+ylabel('Power Spectrum R_x1');
+grid on;
